@@ -1,2 +1,2 @@
-# NodeJs_B7Web
+# Projeto Canil - NodeJs_TypeScript
 NodeJs B7Web Course
