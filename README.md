@@ -1,2 +1,45 @@
 # Projeto Canil - NodeJs_TypeScript
-NodeJs B7Web Course
+Projeto do curso de NodeJs da B7Web
+
+=================================================
+### ANOTATIONS
+
+- Usando 
+    - NodeJs:
+        `npm init`
+    - Config TypeScript:
+        `"tsc --init"`
+        - Configuration:
+            - `target: es6`
+            - `rootDir: ./src`
+            - `outDir ./dist`
+            - `moduleResolution: node16`
+
+- Modules/etc
+    - express
+        `npm install express` 
+    - ts-node
+        `npm install -g ts-node`
+    - typescript
+        `npm install -g typescript`
+    - Nodemon
+        `npm install -g nodemon` 
+        - Expressão package.json:
+          `"start-server": "nodemon -e ts,json mustache src/server.ts"`
+    - path (Para Usar caminho absoluto na pasta pública)
+        `npm install path` 
+    - dotenv (Para usar variáveis de ambiente)
+        `npm install dotenv`
+- Dependências de Desenvolvimento:
+  - Types:
+    - @types/express
+        `npm install --save-dev @types/express` 
+    - @types/node
+        `npm install --save-dev @types/node`
+    - @types/mustache-express
+        `npm install --save-dev @types/mustache-express` 
+
+- Run Project:
+    *`npm run start-server`*
+
+=================================================
