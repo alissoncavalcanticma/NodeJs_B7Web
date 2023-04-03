@@ -2,14 +2,14 @@
     "name": "pj_canil_nodejs-ts",
     "version": 2,
     "public": true,
-    "build": {
-        "src": "dist/server.js",
+    "builds": {
+        "src": "src/server.ts",
         "use": "@vercel/node"
     },
     "routes": [
         {
-            "src": "/(.*)", 
-            "dest": "dist/server.js"
+            "src": "(.*)", 
+            "dest": "src/server.ts"
         }
     ]
 }
