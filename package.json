@@ -2,10 +2,16 @@
     "name": "pj_canil_nodejs-ts",
     "version": "1.0.0",
     "description": "Canil Node.JS Project",
-    "main": "index.js",
+    "main": "src/index.js",
+    "type": "module",
+    "engines": {
+        "node": "16.x"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start-server": "nodemon -e ts,mustache,js,json src/server.ts"
+        "start-server": "nodemon -e ts,mustache,js,json src/server.ts",
+        "start": "node dist/server.js",
+        "postinstall": "tsc && copyfiles -u 1 src/**/*.mustache dist/"
     },
     "repository": {
         "type": "git",
@@ -28,6 +34,7 @@
         "@types/express": "^4.17.17",
         "@types/mustache": "^4.2.2",
         "@types/mustache-express": "^1.2.2",
-        "@types/node": "^18.15.10"
+        "@types/node": "^18.15.10",
+        "copyfiles": "^2.4.1"
     }
 }

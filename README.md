@@ -42,4 +42,19 @@ Projeto do curso de NodeJs da B7Web
 - Run Project:
     *`npm run start-server`*
 
+- To Deploy in Heroku:
+    - "engines" in package.json:
+        `"engines": { "node": "16.x" }`
+    - Install CopyFiles dependecy:
+        `npm install --save-dev copyfiles` 
+    - Create a script's in package.json in section "scripts":
+        `"start": "node dist/server.js,"`
+        `"postinstall": "tsc && copyfiles -u 1 src/**/*.mustache dist/"`
+        > *Transcribe from TypeScript to JS, creating the "dist/" folder with a "views" folder and copy the mustache files.*
+    - Create "Procfile" in root:
+        `web: npm start`
+    - Run the "postinstall" and "start" script's:
+        `npm run postinstall`
+        `npm run start` 
+
 =================================================
