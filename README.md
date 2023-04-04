@@ -1,4 +1,4 @@
-# Projeto Canil - NodeJs_TypeScript
+# Projeto Site Animals - NodeJs_TypeScript
 Projeto do curso de NodeJs da B7Web
 
 =================================================
@@ -42,6 +42,7 @@ Projeto do curso de NodeJs da B7Web
 - Run Project:
     *`npm run start-server`*
 
+<!--
 - To Deploy in Heroku:
     - "engines" in package.json:
         `"engines": { "node": "16.x" }`
@@ -56,5 +57,5 @@ Projeto do curso de NodeJs da B7Web
     - Run the "postinstall" and "start" script's:
         `npm run postinstall`
         `npm run start` 
-
+-->
 =================================================
