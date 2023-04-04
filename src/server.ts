@@ -3,7 +3,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mustache from 'mustache-express';
 import path from 'path';
-import mainRoutes from './routes/index';
+import mainRoutes from './routes/index.js';
 
 //import .env
 dotenv.config();

@@ -1,8 +1,8 @@
 import {Request, Response} from 'express';
 //importando função do helpers
-import {createMenuObject} from '../helpers/createMenuObject';
+import {createMenuObject} from '../helpers/createMenuObject.js';
 //import model Pet
-import {Pet} from '../models/pet';
+import {Pet} from '../models/pet.js';
 
 export const home = (req: Request, res: Response) => {
     

@@ -2,7 +2,7 @@
     "name": "pj_canil_nodejs-ts",
     "version": "1.0.0",
     "description": "Canil Node.JS Project",
-    "main": "src/index.js",
+    "main": "src/index.ts",
     "type": "module",
     "engines": {
         "node": "16.x"
