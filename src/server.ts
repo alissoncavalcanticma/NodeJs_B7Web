@@ -17,7 +17,8 @@ server.set('view engine', 'mustache');
 server.engine('mustache', mustache());
 
 //set public folder
-server.use(express.static(path.join(__dirname, '../public')));
+//server.use(express.static(path.join(__dirname, '../public')));
+server.use(express.static(__dirname + '../../public'));
 //set views folder
 server.set('views', path.join(__dirname, 'views'));
 
